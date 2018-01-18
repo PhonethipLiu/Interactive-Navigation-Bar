@@ -1,0 +1,29 @@
+/* Create a navigation bar out of an unordered list element, and add the following interactivity.
+When the user hovers over one of the links, the color of the text should change.
+When the user hovers over one of the links, the background color of the element that contains the link should change.
+When the user clicks on one of the links, the element that contains the link should grow in size by 5px on the left and right. */
+
+.navBar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+li:first-child a:hover {
+    color: slategray;
+}
+
+li:nth-child(2) a:hover {
+    display: block;
+    background-color: slategray;
+    color: white;
+    width: 30%;
+}
+
+li:last-child a:active {
+    width: 25px;
+    padding: 15px 15px;
+    border: 1px solid lightslategray;
+    transform: scale(1.5);   
+
+}
